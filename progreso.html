@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progreso</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Water Please</h1>
+    <p>No olvides beber agua</p>
+
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="progreso.html">Progreso</a></li>
+        <li><a href="consejos.html">Consejos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Configura tu perfil</h2>
+      <p>Usaremos estos datos para calcular tu consumo diario de agua.</p>
+      <!--formulario datos genericos-->
+      <form action="progreso.html" method="get">
+        <fieldset>
+          <legend>Datos personales</legend>
+
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Datos físicos</legend>
+
+          <label for="peso">Peso (kg)</label>
+          <input type="number" id="peso" name="peso" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Actividad</legend>
+
+          <label for="actividad">Nivel de actividad</label>
+          <select id="actividad" name="actividad">
+            <option value="baja">Baja</option>
+            <option value="media">Media</option>
+            <option value="alta">Alta</option>
+          </select>
+        </fieldset>
+
+        <button type="submit">
+          Empezar
+        </button>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Water Please</p>
+  </footer>
+</body>
+
+</html>
