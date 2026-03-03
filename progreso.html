@@ -18,6 +18,7 @@
         <li><a href="index.html">Inicio</a></li>
         <li><a href="progreso.html">Progreso</a></li>
         <li><a href="consejos.html">Consejos</a></li>
+        <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
   </header>
@@ -26,36 +27,72 @@
     <section>
       <h2>Configura tu perfil</h2>
       <p>Usaremos estos datos para calcular tu consumo diario de agua.</p>
-      <!--formulario datos genericos-->
+      
+      <!--formulario de datos -->
       <form action="progreso.html" method="get">
         <fieldset>
           <legend>Datos personales</legend>
 
           <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre" required>
+          <input type="text" id="nombre" name="nombre" autocomplete="given-name" required>
+
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" autocomplete="family-name" required>
+
+          <label for="email">Correo electrónico</label>
+          <input type="text" id="email" name="email" autocomplete="email" required>
         </fieldset>
 
         <fieldset>
-          <legend>Datos físicos</legend>
+          <legend>Sexo biológico</legend>
+          <label>
+            <input type="radio" name="sexo" value="hombre" required>
+            Hombre
+          </label>
 
+          <label>
+            <input type="radio" name="sexo" value="mujer" required>
+            Mujer
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Datos específicos</legend>
+          <label for="edad">Edad</label>
+          <input type="number" id="edad" name="edad" placeholder="Ej: 30" autocomplete="off" required>
           <label for="peso">Peso (kg)</label>
-          <input type="number" id="peso" name="peso" required>
+          <input type="number" id="peso" name="peso" step="0.1" placeholder="Ej: 60" required>
+          <label for="altura">Altura</label>
+          <input type="number" id="altura" name="altura" step="0.01" placeholder="Ej: 1.66" required>
         </fieldset>
 
         <fieldset>
-          <legend>Actividad</legend>
+          <legend>Clima y actividad</legend>
+          <label for="temperatura">Temperatura actual:</label>
+          <input type="number" id="temperatura" name="temperatura" placeholder="Ej: 20" required>
+          <label for="unidad">Unidad:</label>
+          <select id="unidad" name="unidad">
+            <option value="c">°C</option>
+            <option value="f">°F</option>
+          </select>
 
-          <label for="actividad">Nivel de actividad</label>
+          <label for="estacion">Estación del año:</label>
+          <select id="estacion" name="estacion">
+            <option value="primavera">Primavera</option>
+            <option value="verano">Verano</option>
+            <option value="otoño">Otoño</option>
+            <option value="invierno">Invierno</option>
+          </select>
+
+          <label for="actividad">Nivel de actividad física:</label>
           <select id="actividad" name="actividad">
-            <option value="baja">Baja</option>
-            <option value="media">Media</option>
-            <option value="alta">Alta</option>
+            <option value="sedentario">Sedentario</option>
+            <option value="moderado">Moderado</option>
+            <option value="deportista">Deportista</option>
           </select>
         </fieldset>
 
-        <button type="submit">
-          Empezar
-        </button>
+        <button type="submit">Calcular meta</button>
 
       </form>
     </section>

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -13,20 +15,33 @@
 
         <nav aria-label="Navegación principal">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html" aria-current="page">Inicio</a></li>
                 <li><a href="progreso.html">Progreso</a></li>
                 <li><a href="consejos.html">Consejos</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section>
+            <h2>¿Qué es Water Please?</h2>
+            <p>
+                Water Please es una aplicación sencilla que te ayuda a controlar tu consumo
+                diario de agua y crear un hábito saludable de hidratación.
+            </p>
+            <p>
+                Configura tu perfil para calcular tu meta diaria personalizada.
+                <a href="progreso.html">Hazlo aquí</a>.
+            </p>
+        </section>
+
+        <section>
             <h2>Tu progreso diario</h2>
             <p>Meta diaria: <strong>2.5 litros</strong></p>
-
-            <progress value="1000" max="2500"></progress>
+            <progress value="1000" max="2500" aria-label="Progreso de hidratación diaria"></progress>
             <p>Has bebido 1000 ml</p>
+            <p>Te falta <strong>1.5 litros</strong> para alcanzar tu objetivo de hoy</p>
             <div>
                 <button>+ 250 ml</button>
                 <button>+ 500 ml</button>
@@ -48,10 +63,27 @@
                 <li>21:00 - 250 ml</li>
             </ul>
         </section>
+
+        <section>
+            <h3>Recordatorio</h3>
+            <p>
+                Intenta beber un vaso de agua cada 60 - 90 minutos para mantenerte hidratado.
+            </p>
+        </section>
+
+        <section>
+            <h3>Resumen de hoy</h3>
+            <ul>
+                <li>Total bebido: 1.000 ml</li>
+                <li>Objetivo: 2.500 ml</li>
+                <li>Vasos registrados: 4</li>
+            </ul>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Water Please</p>
     </footer>
 </body>
+
 </html>
