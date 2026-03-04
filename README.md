@@ -38,14 +38,14 @@ Principalmente es para uso personal, pero puede ser útil para cualquier persona
 ## 6. Tecnologías utilizadas
 - HTML5  
 - CSS3  
-- Diseño responsive 
+- Diseño responsivo
 
 ---
 
 ## 7. Estructura de archivos
 Water-Please/ ← Carpeta raíz del proyecto
 ├─ index.html ← Página principal (progreso diario)
-├─ progreso.html ← Configuración de perfil y registro
+├─ registro.html ← Configuración de perfil y registro
 ├─ consejos.html ← Tips y consejos de hidratación
 ├─ blog.html ← Blog y experiencias personales
 ├─ style.css ← Estilos globales
