@@ -4,19 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progreso</title>
+  <title>Registro</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
     <h1>Water Please</h1>
-    <p>No olvides beber agua</p>
-
-    <nav aria-label="Navegación principal">
+    <nav class="main-nav">
       <ul>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="progreso.html">Progreso</a></li>
+        <li><a href="registro.html" aria-current="page">Registro</a></li>
         <li><a href="consejos.html">Consejos</a></li>
         <li><a href="blog.html">Blog</a></li>
       </ul>
@@ -26,12 +24,12 @@
   <main>
     <section>
       <h2>Configura tu perfil</h2>
-      <p>Usaremos estos datos para calcular tu consumo diario de agua.</p>
+      <p>Calcula tu meta diaria personalizada</p>
       
       <!--formulario de datos -->
       <form action="progreso.html" method="get">
         <fieldset>
-          <legend>Datos personales</legend>
+          <legend>Datos generales</legend>
 
           <label for="nombre">Nombre</label>
           <input type="text" id="nombre" name="nombre" autocomplete="given-name" required>
