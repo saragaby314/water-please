@@ -50,7 +50,7 @@ section {
 }
 
 /***Navegación principal***/
-.main-nav {
+.menu-nav {
     background-color: #edf6fa;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
@@ -58,26 +58,26 @@ section {
     text-align: center;
 }
 
-.main-nav ul {
+.menu-nav ul {
     display: flex;
     justify-content: center;
     gap: 2rem;
 }
 
-.main-nav a {
+.menu-nav a {
     position: relative;
     color: #3a4f57; 
     font-weight: bold;
     transition: 0.8s ease;
 }
 
-.main-nav a:hover,
-.main-nav a[aria-current="page"] {
+.menu-nav a:hover,
+.menu-nav a[aria-current="page"] {
     color: #5fa8b8; 
     text-shadow: 0 0 6px #5fa8b880;
 }
 
-.main-nav a::after {
+.menu-nav a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -88,8 +88,8 @@ section {
     transition: 0.8s ease;
 }
 
-.main-nav a:hover::after,
-.main-nav a[aria-current="page"]::after {
+.menu-nav a:hover::after,
+.menu-nav a[aria-current="page"]::after {
     width: 100%;
 }
 
